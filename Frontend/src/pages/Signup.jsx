@@ -29,7 +29,7 @@ function Signup() {
       return handleError("name, email, and password are required.");
     }
     try {
-      const url = "http://localhost:8000/auth/signUp";
+      const url = "https://implementedlsback.vercel.app/auth/signUp";
       const response = await fetch(url, {
         method: "POST",
         headers: {
