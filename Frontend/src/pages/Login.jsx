@@ -20,7 +20,7 @@ function Login() {
     setLoginInfo(copyLoginInfo);
   };
 
-  // console.log("loginInfo -> ", signupInfo);
+  console.log("loginInfo -> ", loginInfo);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -35,6 +35,8 @@ function Login() {
         headers: {
           "Content-Type": "application/json",
         },
+        // body: JSON.stringify(loginInfo),
+      //  console.log(loginInfo, "loginInfo")
         body: JSON.stringify(loginInfo),
       });
         const result = await response.json();
